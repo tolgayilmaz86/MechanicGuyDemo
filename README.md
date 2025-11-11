@@ -2,7 +2,7 @@
 
 An intelligent racing setup assistant that translates your driving experience into expert setup guidance. Based on how you feel the car behaves in different corners, MechanicGuy provides professional-level recommendations to help you fix understeer and oversteer issues through proper setup adjustments.
 
-![MechanicGuy Interface](screenshots/main-window.png)
+![MechanicGuy Interface](screenshots/tab1view.png) ![MechanicGuy Interface](screenshots/tab2view.png)
 
 *Professional racing overlay with intelligent diagnostic matrix and prioritized setup recommendations*
 
