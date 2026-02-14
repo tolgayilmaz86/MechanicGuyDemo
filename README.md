@@ -1,77 +1,139 @@
-# MechanicGuy - A setup helper Overlay🏎️
+# MechanicGuy - A setup helper Overlay racing companion
 
 An intelligent racing setup assistant that translates your driving experience into expert setup guidance. Based on how you feel the car behaves in different corners, MechanicGuy provides professional-level recommendations to help you fix understeer and oversteer issues through proper setup adjustments.
 
-![MechanicGuy Interface](screenshots/tab1view.png) ![MechanicGuy Interface](screenshots/tab2view.png)
+![MechanicGuy Interface](screenshots/main_window.png)
 
 *Professional racing overlay with intelligent diagnostic matrix and prioritized setup recommendations*
 
-## 🎯 What It Does
+## What It Does
 
-**MechanicGuy** helps you translate your driving experience into actionable setup changes. **Based on your assessment** of how the car feels in different corner phases and speeds, it provides prioritized setup recommendations to fix understeer and oversteer issues.
-Not only that but you can also track your changes via checkboxes when you are done with a specific change.
-Also get some hints for the setup items if you are not sure.
+**MechanicGuy** helps you translate your driving experience into actionable setup changes. Based on your assessment of how the car feels in different corner phases and speeds, it provides prioritized setup recommendations to fix understeer and oversteer issues.
 
-Best part is these are all CONFIGURABLE with a json file. Tailor it to your needs and share with your team! See the [JSON Configuration System](#-json-configuration-system) section below for details.
+Track your progress with checkboxes, get detailed hints for each setup item, and save/load sessions for later. Best of all, the recommendation database is fully configurable via JSON - tailor it to your needs and share with your team!
 
-## ✨ Key Features
+## Key Features
 
-### 🎮 **Real-Time Overlay Interface**
+### Real-Time Overlay Interface
 - **Right-side screen positioning** for optimal visibility without blocking race action
 - **Always-on-top transparent window** that integrates seamlessly with your sim
 - **Minimizable overlay** - collapse when not needed, expand instantly when required
 - **Real-time transparency control** - adjust opacity on-the-fly for perfect visibility balance
 - **Formula 1 inspired styling** with authentic racing fonts and professional aesthetics
-- **Instant hotkey access** (`Double tap Alt` while focused or globally with `Ctrl-Shift M`) for quick overlay toggling
-  - You can set the global hotkey with any button on your wheel and map with any other 3rd party programs (e.g.: JoyToKey)
+- **Instant hotkey access** (`Double tap Alt` or `Ctrl+Shift+M`) for quick overlay toggling
+- **Multi-monitor support** - choose your preferred monitor for overlay placement
 
-### 🧠 **Intelligent Diagnostic System**
-- **6-Zone Analysis Matrix**: Diagnose handling across Entry/Apex/Exit phases and Low-Speed/High-Speed corners
+### Intelligent Diagnostic System
+- **6-Zone Analysis Matrix**: Diagnose handling across Entry/Apex/Exit phases and Low-Speed/Mid-Hi-Speed corners
 - **Driver-Feel Based Input**: You assess how the car behaves - simply select where you experience understeer (push) or oversteer (loose)
 - **No Telemetry Required**: Works purely on your driving experience and feel for the car's handling characteristics
 - **Context-Aware Recommendations**: Different solutions for mechanical vs. aerodynamic-dominated corners
 
-### 🔧 **Expert Setup Guidance**
+### General Symptoms Diagnosis
+Beyond turn-phase diagnostics, track overall car behavior:
+- Braking Instability
+- Power Wheelspin
+- Straight-line Instability
+- Bumps & Kerbs Issues
+- Aero Bottoming
+- Tire Temperature Balance
+- Tire Overheating/Underheating
+- Downshift Oversteer
+
+### Expert Setup Guidance
 - **JSON-driven knowledge base** - easily expandable and customizable for your specific needs
 - **Prioritized Recommendations**: Get solutions ranked by effectiveness and ease of implementation
-- **Comprehensive Coverage**: 
+- **Comprehensive Coverage**:
   - Aerodynamics (front/rear wing angles, ride heights)
   - Suspension (ARB settings, spring rates, dampers)
   - Tires (pressures, camber, toe settings)
   - Differential (preload, ramp angles, friction faces)
   - Electronics (TC levels, ABS, brake bias)
+  - Mechanical (bushing stiffness)
+  - Geometry (ride height, toe, camber)
 - **Professional Hints**: Each recommendation includes expert insights on why it works and potential trade-offs
 
-### **Data-Driven Intelligence**
-- **JSON-based knowledge base** with 100+ setup recommendations that can be expanded and tailored to your specific racing needs
-- **Structured symptom analysis** covering all racing scenarios
-- **Extensible recommendation engine** - modify the JSON file to add custom setups, new car categories, or track-specific solutions
-- **Community-ready architecture** for sharing and importing setup databases
+### Progress Tracking
+- **Completion Checkboxes**: Mark recommendations as done to track your progress
+- **Step Counter**: Track adjustment steps per recommendation (supports negative values for opposite direction changes)
+- **Persistent Settings**: Your preferences (hints, notes, steps visibility) are saved automatically
 
-### **Professional Racing Integration**
-- **FontAwesome icons** for intuitive visual feedback
-- **Formula 1 typography** for authentic racing aesthetics
-- **Color-coded hierarchical sections** (Front/Rear/Overall) for quick recognition
+### Session Management
+- **Save Sessions**: Save your current diagnostic state and recommendation progress
+- **Load Sessions**: Restore previous sessions to continue where you left off
+- **Delete Sessions**: Manage your saved sessions with delete functionality
 
-## 🚀 Capabilities
+### Customization
+- **JSON Configuration**: Customize the entire recommendation database
+- **Load Custom Guides**: Import your own `guide.json` files via the folder button
+- **Community Ready**: Share custom configurations with other racers
 
-### **Smart Recommendations**
-Each scenario provides 8-12 prioritized solutions covering:
+## Quick Start
 
-- **Immediate Fixes**: In-race adjustments (brake bias, TC, ABS)
-- **Mechanical Setup**: Springs, ARBs, ride heights, alignment
-- **Aerodynamic Balance**: Wing angles, rake, ride height at speed  
-- **Tire Optimization**: Pressures, camber, toe settings
-- **Differential Tuning**: Preload, ramp angles, friction settings
+### Download & Run
 
-## 🎯 Perfect For
+1. Download the latest release from [Releases](../../releases)
+2. Extract to any folder
+3. Run `MechanicGuy.exe`
+4. Overlay positions itself on the right of primary monitor
+5. Change the preferred monitor in the help/settings if needed
+6. Start racing!
+
+### Usage
+
+1. **During Practice/Race**: Notice handling issues (understeer/oversteer)
+2. **Select the Problem**: Click the appropriate phase (Entry/Apex/Exit) and turn type (Low/Mid-Hi-Speed)
+3. **Get Recommendations**: Review prioritized setup changes
+4. **Apply in Garage**: Make adjustments between sessions
+5. **Track Progress**: Check off completed changes
+6. **Test & Iterate**: Refine until handling improves
+
+## Screenshots
+
+### Diagnostics
+
+#### Turn-Based Understeer/Oversteer Diagnosis
+![Turn-Based Diagnosis](screenshots/turn_based_us_os_diagnosis.png)
+*Select where the car understeers or oversteers by turn phase and speed*
+
+#### General Instability Diagnosis
+![General Diagnosis](screenshots/general_instability_diagnosis.png)
+*Diagnose general symptoms like braking instability, wheelspin, and tire issues*
+
+### Recommendations
+
+#### Recommendations View with Progress Tracking
+![Recommendations View](screenshots/recommendations_view.png)
+*Prioritized setup changes with completion checkboxes and step counters*
+
+#### Hints and Notes per Setup Setting
+![Hints and Notes](screenshots/hints_and_notes_per_setup_setting.png)
+*Detailed hints and notes for each recommendation*
+
+### Session Management
+
+#### Save Session Feature
+![Save Session](screenshots/save_session_feature.png)
+*Save your current diagnostic state and progress*
+
+#### Load Session Feature
+![Load Session](screenshots/load_session_feature.png)
+*Load previously saved sessions*
+
+### Help
+
+#### Help Popup
+![Help Popup](screenshots/help_popup.png)
+*Built-in help and usage instructions*
+
+## Perfect For
 
 - **Sim Racing Enthusiasts** who can feel car handling nuances and want to learn proper setup techniques
 - **League Racers** needing quick diagnostic guidance during practice based on their driving feedback
 - **Setup Beginners** wanting to learn how their driving sensations translate to setup changes
 - **Experienced Drivers** seeking a systematic approach to translate car feel into technical adjustments
 
-## 🔬 Racing Science
+## Racing Science
 
 Built on decades of motorsport engineering knowledge, covering:
 - **Mechanical vs. Aerodynamic** grip scenarios
@@ -79,79 +141,60 @@ Built on decades of motorsport engineering knowledge, covering:
 - **Tire contact patch optimization** under various conditions
 - **Electronic system integration** for modern race cars
 
-## 🎨 User Experience
+## Racing Tips
 
-- **Smart Positioning**: Overlay appears on the right side of your screen for optimal visibility
-- **Flexible Display**: Minimize when racing, expand when analyzing - seamless workflow integration
-- **Dynamic Transparency**: Adjust opacity in real-time using intuitive controls
-- **Driver-Centric Interface**: Clean, uncluttered design focused on translating your car feel into setup guidance
-- **Instant Feedback**: Input your driving sensations, get immediate prioritized solutions
-- **Professional Tooltips**: Detailed explanations for every recommendation to help you understand the why
-- **Customizable Database**: Modify the JSON configuration file to tailor recommendations to your specific needs
+- **Focus on one issue at a time** - Don't select multiple problems simultaneously
+- **Make incremental changes** - Apply 1-2 suggestions, test, then adjust
+- **Test thoroughly** - Run multiple laps to confirm improvements
+- **Track conditions matter** - Weather and temperature affect setup effectiveness
+- **Document your setups** - Use the session save feature to keep notes
+- **Compare lap times** - Use telemetry to verify improvements objectively
 
----
+## Troubleshooting
 
-*Transform your setup process from guesswork to science. MechanicGuy brings professional race engineering knowledge to every sim racer.*
+### Application Won't Start
+- Update graphics drivers (especially OpenGL)
+- Install [Visual C++ Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe)
+- Run as administrator
 
-## 🔧 JSON Configuration System
+### Overlay Not Visible
+- Press `Ctrl+Shift+M` to toggle visibility
+- Check if overlay is minimized to collapsed state
+- Adjust transparency slider (might be fully transparent)
+- Verify window isn't off-screen (multi-monitor setup)
+
+### Fonts Not Loading
+- Ensure `assets/fonts/` directory exists alongside `.exe`
+- Verify font files are not corrupted
+
+### Performance Issues
+- Close other overlays (Discord, MSI Afterburner, etc.)
+- Update GPU drivers
+- Reduce overlay opacity (less rendering overhead)
+
+### Hotkey Not Working
+- Check if another app is using `Ctrl+Shift+M`
+- Run as administrator (global hotkeys require elevation)
+- Use alternative: Double-tap `Alt` key
+
+## JSON Configuration System
 
 MechanicGuy uses a flexible JSON-based configuration system that allows you to customize and expand the setup recommendations database.
 
-### **How It Works**
+### How It Works
 - **External File Priority**: The executable automatically looks for `guide.json` in the same directory
 - **Fallback System**: If `guide.json` is not found, uses embedded default recommendations
 - **Hot-Swappable**: Modify the JSON file and restart to see your changes
 - **Community Ready**: Easy to share custom configurations with other racers
+- **Load Custom Guide**: Use the folder button in the recommendations header to load any JSON guide file
 
-### **Sample JSON Structure**
-
-```json
-{
-  "version": "1.1",
-  "title": "Mechanic Guy Setup companion",
-  "description": "+ / – with (stiffer/softer)",
-  "symptoms": {
-    "understeer": {
-      "label": "Understeer (Push)",
-      "icon": "arrow-right"
-    },
-    "oversteer": {
-      "label": "Oversteer (Loose)", 
-      "icon": "arrow-left"
-    }
-  },
-  "troubleshooting": {
-    "understeer": {
-      "entry": {
-        "low": [
-          {
-            "section": "front",
-            "item": "Starting Pressure",
-            "change": "– (lower)",
-            "hint": "Lowers front stiffness → better turn-in compliance. Watch inner edge temps rise.",
-            "priority": 1
-          },
-          {
-            "section": "front", 
-            "item": "Camber",
-            "change": "– (more negative)",
-            "hint": "Improves contact patch under load. Check outer edge temp — should be 2-3°C hotter than inner.",
-            "priority": 2
-          }
-        ]
-      }
-    }
-  }
-}
-```
-
-### **Customization Options**
+### Customization Options
 - **Add New Scenarios**: Create recommendations for specific car types or racing series
 - **Modify Priorities**: Reorder recommendations based on your experience
 - **Custom Hints**: Add detailed explanations tailored to your racing style
 - **Team Databases**: Share optimized configurations within your racing team
 
-## ☕ Support the Project
+## Support the Project
 
 If MechanicGuy helps improve your racing, consider supporting its development:
 
@@ -159,21 +202,18 @@ If MechanicGuy helps improve your racing, consider supporting its development:
 
 Your support helps fund continued development, new features, and community resources!
 
-## 🤝 Contributing
+## Future Plans
 
-This project represents a passion for sim racing and engineering excellence. While the source code is not yet public, the technology demonstrates the potential for data-driven racing assistance tools.
-
-**Future Plans:**
-- Community-driven setup database expansion
+- Accompany with the setup adjustment pages seen on games
+- Add guide for more issues (snap oversteer, US to OS, etc.)
+- Getting current setup values from connected simulators
+- Telemetry integration for automatic problem detection
+- Car/Track specific recommendations
 - Integration with popular sim racing platforms
-- Advanced telemetry analysis features
-
-## 📬 Contact & Updates
-
-Watch this space for updates on the open source release and additional features. MechanicGuy represents the future of intelligent racing assistance tools.
+- Support for more racing sims
 
 ---
 
-**Built with ❤️ for the sim racing community**
+**Built with love for the sim racing community**
 
 *Professional race engineering knowledge, accessible to every driver.*
